@@ -1,0 +1,400 @@
+city_id,city_name,country_id
+512,"the Loyalty Islands",128
+513,"Bristol Island",129
+514,Malango,130
+515,Ozernovskiy,131
+516,"South Shetland Islands",132
+517,Pondaguitan,133
+518,Labuan,134
+519,"San Antonio",135
+520,Severo-Kuril'sk,131
+521,Turt,136
+522,Bengkulu,134
+523,Kimbe,137
+524,Corral,135
+525,Lakatoro,138
+526,Neiafu,139
+527,"Neon Karlovasion",140
+528,Laiwui,134
+529,"Sand Point",141
+530,Levuka,142
+531,Broome,143
+532,"Kota Ternate",134
+533,Palu,134
+534,Vallenar,135
+535,"the Fiji Islands",142
+536,"Searles Valley",141
+537,Saumlaki,134
+538,"Kermadec Islands region",144
+539,"Boca Chica",145
+540,"L'Esperance Rock",146
+541,Kirakira,130
+542,Katabu,134
+543,Aguililla,147
+544,Chitose,148
+545,Yujing,149
+546,"La Libertad",150
+547,"San Pedro",133
+548,Tadine,151
+549,Navarro,152
+550,Perryville,141
+551,Inapari,152
+552,Popondetta,137
+553,Namatanai,137
+554,Lugu,149
+555,Carupano,153
+556,Isangel,138
+557,Bulolo,137
+558,"Labuan Lombok",134
+559,Kainantu,137
+560,Luwuk,134
+561,Kangding,154
+562,"Labuan Bajo",134
+563,"the Kermadec Islands",144
+564,Azangaro,152
+565,Batang,134
+566,Bantay,133
+567,Adak,141
+568,"Santa Maria Xadani",147
+569,Tarauaca,155
+570,Palora,156
+571,"Leilani Estates",141
+572,"Puerto Madero",147
+573,"San Antonio de los Cobres",157
+574,Boyuibe,158
+575,Masachapa,159
+576,"Prince Edward Islands region",160
+577,Naze,148
+578,Kokopo,137
+579,"San Pedro de Atacama",135
+580,"Hualien City",149
+581,Tari,137
+582,Coquimbo,135
+583,Namie,148
+584,Sola,138
+585,Pariaman,134
+586,"Pinotepa de Don Luis",147
+587,Chiniak,141
+588,Atiquipa,152
+589,Lata,130
+590,"Barra Patuca",161
+591,"Nea Anatoli",140
+592,Kawalu,134
+593,"Ust'-Kamchatsk Staryy",131
+594,"Bouvet Island region",162
+595,Parrita,163
+596,"Kermadec Islands",146
+597,?alabja,164
+598,Angoram,137
+599,Stanley,141
+600,Barranca,152
+601,Hihifo,139
+602,"Point MacKenzie",141
+603,Kuril'sk,131
+604,Olonkinbyen,165
+605,Lithakia,140
+606,"Port McNeill",166
+607,Maumere,134
+608,Nikolski,141
+609,"Attu Station",141
+610,Lucea,167
+611,Do?anyol,168
+612,Matzaco,147
+613,Magsaysay,133
+614,Chiapas,147
+615,Buala,130
+616,Mawu,154
+617,Kos,140
+618,Lefkada,140
+619,Bitung,134
+620,"Komandorskiye Ostrova",131
+621,Makurazaki,148
+622,"Ndoi Island",142
+623,"Auckland Islands",146
+624,Polis,169
+625,Lim-oo,133
+626,Ovalle,135
+627,"northern Qinghai",154
+628,"Puerto San Jose",170
+629,Maubara,171
+630,Lospalos,171
+631,"San Pablo",170
+632,"Hindu Kush region",172
+633,Port-Olry,138
+634,Poso,134
+635,Sorong,134
+636,Kisante,133
+637,"South Sandwich Islands region",173
+638,Illapel,135
+639,Columbio,133
+640,Constitucion,135
+641,Hirara,148
+642,Burias,133
+643,Chignik,141
+644,Valparaiso,135
+645,"Vanuatu region",138
+646,Moijabana,174
+647,Jiquilillo,159
+648,Topolobampo,147
+649,Acapulco,147
+650,Kairatu,134
+651,Gizo,130
+652,Abepura,134
+653,Nippes,175
+654,"Fox Islands",141
+655,Bathsheba,176
+656,Bharatpur,177
+657,Alo,178
+658,"Bonin Islands",148
+659,Padilla,158
+660,Mabua,133
+661,Panguna,137
+662,Ugashik,141
+663,Miyako,148
+664,"El Aguilar",157
+665,Tabiauan,133
+666,Hukay,133
+667,Port-Vila,138
+668,Burica,145
+669,Nadi,142
+670,"Punta de Burica",145
+671,Quellon,135
+672,Sangay,133
+673,?funato,148
+674,Ternate,134
+675,Tobelo,134
+676,"Southern Qinghai",154
+677,Gisborne,146
+678,Sinabang,134
+679,"Mauritius - Reunion region",179
+680,Finschhafen,137
+681,"Fiji region",142
+682,Haveluloto,139
+683,Intipuca,150
+684,Pangai,139
+685,"Piti Village",180
+686,Ferndale,141
+687,Ishinomaki,148
+688,Aniso,152
+689,"Micronesia region",181
+690,Kod?ri??,177
+691,Reuleuet,134
+692,Murghob,182
+693,"Puerto El Triunfo",150
+694,Mata-Utu,178
+695,Belen,159
+696,Amberley,146
+697,Iquique,135
+698,"Rat Islands",141
+699,Blenheim,146
+700,Preci,183
+701,Pamanukan,134
+702,Indianola,141
+703,Kandrian,137
+704,Kamariotissa,140
+705,Nago,148
+706,Greenland,176
+707,Hotan,154
+708,Java,134
+709,Vernon,166
+710,Okhotsk,184
+711,Rabaul,137
+712,Vaini,139
+713,"Pagan region",185
+714,Chauk,186
+715,Linqiong,154
+716,"Coyuquilla Norte",147
+717,Aitape,137
+718,Kh?sh,187
+719,"Sungai Penuh",134
+720,"off the east coast of Honshu",148
+721,"Rosa Zarate",156
+722,Etchoropo,147
+723,Tual,134
+724,"San Agustin",188
+725,Sagbayan,133
+726,Muisne,156
+727,Hojancha,163
+728,Kissamos,140
+729,"Belaya Gora",131
+730,Yacuanquer,188
+731,Norsup,138
+732,Khuzdar,189
+733,Kumamoto,148
+734,Sulangan,133
+735,Bela,189
+736,Mawlaik,186
+737,Poronaysk,131
+738,Atka,141
+739,Ashk?sham,172
+740,"Izu Islands",148
+741,Obihiro,148
+742,Manokwari,134
+743,"Edna Bay",141
+744,Lae,137
+745,"Hacienda La Calera",135
+746,"San Luis",147
+747,Sumatra,134
+748,"El Habillal",147
+749,"Bahia Solano",188
+750,Mil'kovo,131
+751,Champerico,170
+752,"Pedro Bay",141
+753,Shwebo,186
+754,"La Cruz de Loreto",147
+755,"Santiago Llano Grande",147
+756,"Prince Rupert",166
+757,"Costa Rica",163
+758,Saryg-Sep,131
+759,Shizunai-furukawach?,148
+760,Jimalalud,133
+761,We,151
+762,Sarangani,133
+763,Imph?l,190
+764,Ishikawa,148
+765,"Manuel Avila Camacho (Ponte Duro)",147
+766,Wau,137
+767,Amahai,134
+768,"Helio Garcia Alfaro",147
+769,"Nuevo Balsas",147
+770,Tachilek,186
+771,"Bamboo Flat",190
+772,Santiago,152
+773,?tsuchi,148
+774,Tome,135
+775,Hasaki,148
+776,Van,168
+777,Kamaishi,148
+778,"Santa Cruz",135
+779,?arai,148
+780,"2011 Great Tohoku Earthquake",148
+781,Mangan,190
+782,Kabanjahe,134
+783,Dalbandin,189
+784,Talcahuano,135
+785,'Ohonua,139
+786,Contamana,152
+787,Carahue,135
+788,Lebu,135
+789,Quirihue,135
+790,Bam,187
+791,Jurm,172
+792,Katsuren-haebaru,148
+793,Leogane,175
+794,Gorontalo,134
+795,"Brisas Barra de Suchiate",147
+796,Nookat,191
+797,"El Huitusi",147
+798,Papua,134
+799,Methven,146
+800,Jumla,177
+801,Ecuador,156
+802,Morioka,148
+803,Madang,137
+804,Mizusawa,148
+805,Tianpeng,154
+806,Bantogon,133
+807,"New Britain region",137
+808,Ba,142
+809,Bima,134
+810,"Philippine Islands region",133
+811,Padang,134
+812,Canete,135
+813,Biak,134
+814,Koroni,140
+815,Methoni,140
+816,"Te Anau",146
+817,"General Pascual Fentes",147
+818,"Nicobar Islands",190
+819,Basse-Pointe,192
+820,Meulaboh,134
+821,"Kepulauan Mentawai region",134
+822,Qamdo,154
+823,Dompu,134
+824,Macas,156
+825,Tilichiki,131
+826,Singkil,134
+827,Tocopilla,135
+828,Timbiqui,188
+829,Copiapo,135
+830,"San Vicente de Canete",152
+831,Rengasdengklok,134
+832,Matavai,193
+833,Luganville,138
+834,Katsuura,148
+835,Banjar,134
+836,Lautoka,142
+837,Mikuni,148
+838,Sabang,134
+839,Kashiwazaki,148
+840,Tateyama,148
+841,Iztapa,170
+842,"Macquarie Island",194
+843,"George Town",195
+844,Nemuro,148
+845,?yama,148
+846,Nanao,148
+847,Nabire,134
+848,Riverton,146
+849,"Bahia de Kino",147
+850,Pizarro,188
+851,Ambon,134
+852,Chipinge,196
+853,Kythira,140
+854,Guanaja,161
+855,Ojiya,148
+856,Yonakuni,148
+857,Kalemie,197
+858,Talisay,133
+859,Shing?,148
+860,Teno,135
+861,Muzaffar?b?d,189
+862,"the Kuril Islands",198
+863,Atlasovo,131
+864,Yurimaguas,152
+865,"Naisano Dua",134
+866,"San Juan del Sur",159
+867,Hengchun,149
+868,"Big Lagoon",141
+869,"Afghanistan-Tajikistan-Pakistan region",199
+870,Padangsidempuan,134
+871,"Kuril Islands",198
+872,Maebaru-ch??,148
+873,Puako,141
+874,"Pulau-Pulau Talaud",134
+875,Can-Avid,133
+876,Progreso,145
+877,"San Simeon",141
+878,Palimbang,133
+879,"Merizo Village",180
+880,Singaparna,134
+881,Nuxco,147
+882,Kushiro,148
+883,Calama,135
+884,Aktash,131
+885,Taungdwingyi,186
+886,Mindanao,133
+887,Sultanda??,168
+888,Dellys,200
+889,Hanamaki,148
+890,Ruteng,134
+891,Kendari,134
+892,Cuyutlan,147
+893,"Inarajan Village",180
+894,Kokhanok,141
+895,Skyros,140
+896,"Punta de Bombon",152
+897,Achanizo,152
+898,"New Ireland region",137
+899,Pacocha,152
+900,Atico,152
+901,Cantwell,141
+902,Kure,148
+903,Longbranch,141
+904,Cojutepeque,150
+905,Bhach?u,190
+906,"San Jose Village",185
+907,"Old Harbor",141
+908,Lukatan,133
+909,Abhar,187
+910,"Monte Patria",135
