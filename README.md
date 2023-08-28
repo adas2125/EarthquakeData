@@ -19,4 +19,4 @@ The Earthquake App allows users to explore earthquake data in the context of a m
 # Earthquake App can be accessed [here](http://54.227.112.195:5000/)
 This was set up using an Amazon EC2 instance to create a web server.
 
-## [Earthquake App Live Demo can be accessed here] (https://drive.google.com/file/d/1nQL6edRt-BAb-yI5MFgMUVTExt1xQISe/view?usp=drive_link)
+## [Earthquake App Live Demo can be accessed here](https://drive.google.com/file/d/1nQL6edRt-BAb-yI5MFgMUVTExt1xQISe/view?usp=drive_link)
