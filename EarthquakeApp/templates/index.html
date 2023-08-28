@@ -1,21 +1,27 @@
+<!-- Import sources I used related to Leaflet -->
+<!-- Source: https://www.youtube.com/watch?v=Z1RJmh_OqeA&list=LL&index=17&t=370s -->
+<!-- Source: https://leafletjs.com/examples/quick-start/ -->
+<!-- Source: https://github.com/lennardv2/Leaflet.awesome-markers -->
+<!-- Source: https://www.cdnpkg.com/Leaflet.awesome-markers/file/leaflet.awesome-markers.min.js/ -->
 {% extends 'base.html' %}
 
 {% block head %}
 <title>Earthquake App</title>
 
-    <!-- Leaflet CSS and JS -->
+    <!-- Leaflet CSS stylesheet-->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
     crossorigin=""/>
 
-    <!-- Leaflet.awesome-markers CSS -->
+    <!-- Leaflet.awesome-markers CSS stylesheet -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css">
 
+    <!-- Leaflet JS -->
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
     crossorigin=""></script>
 
-    <!-- Leaflet.awesome-markers JS -->
+    <!-- Leaflet.awesome-markers JS-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
 
     <style>
@@ -28,21 +34,24 @@
 {% endblock %}
 
 {% block body %}
-    <h1>World Map</h1>
+    <h1>Earthquake App</h1>
     
+    <!-- Source: https://blog.hubspot.com/website/html-dropdown -->
     <select id="mode-selector">
         <option value="click">Click Mode</option>
         <option value="explore">Explore Mode</option>
     </select>
 
+    <!-- Click Mode Elements -->
     <div id="click-mode-elements" style="display: block;">
+        <!-- Source: https://www.w3schools.com/howto/howto_js_rangeslider.asp -->
         <input type="range" min="500" max="1000" value="750" class="slider" id="myRange">
         <div id="radius">Value: 750</div>
     </div>
 
     <!-- Explore Mode Elements -->
     <div id="explore-mode-elements" style="display: none;">
-        <!-- Elements specific to Explor Mode go here -->
+        <!-- Source: https://www.w3schools.com/html/html_forms.asp -->
         <form id="explore-form">
             <label for="continent">Select a continent:</label> 
                 <select name="continent" id="continent"> 
