@@ -15,3 +15,6 @@ The Earthquake App allows users to explore earthquake data in the context of a m
 4. Install the requirements using `pip install -r requirements.txt`
 5. Run the app using `python earthquake_app.py`
 6. Navigate to `http://localhost:5000/`
+
+# Earthquake App can be accessed [here](http://54.227.112.195:5000/)
+This was set up using an Amazon EC2 instance to create a web server.
