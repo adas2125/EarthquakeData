@@ -8,8 +8,10 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '© OpenStreetMap'
 }).addTo(map);
 
+// initializing a popup that will be displayed when the user clicks on the map
 var popup = L.popup();
 
+// Global constant needed to convert between meters and miles
 const METERS_PER_MILE = 1609.344;
 
 // adding markers layer to the map where the markers will be displayed
@@ -36,12 +38,23 @@ var blueMarker = L.AwesomeMarkers.icon({
 // slider and slider value source: https://www.w3schools.com/howto/howto_js_rangeslider.asp
 const slider = document.getElementById("myRange");
 const output = document.getElementById("radius");
+const modeSelector = document.getElementById("mode-selector");
 
+// show slider value when slider is moved source: https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/input_event
+function handleSliderChange() {
+    if (modeSelector.value === "click") {
+        // update the slider value in the HTML page
+        output.innerHTML = "Value: " + this.value;
+    }
+}
+
+// removes all markers from the map
 function clearLayers() {
     markers.clearLayers();
     markersDisplayed = false;
 }
 
+// adds markers to the map that are either blue or red based on the tsunami value
 function addMarkers(data, index) {
     let marker;
     // adding blue markers for earthquakes that caused a tsunami and red markers otherwise
@@ -50,9 +63,11 @@ function addMarkers(data, index) {
     } else {
         marker = L.marker([latitude, longitude], {icon: redMarker}).addTo(markers);
     }
+    // adding a popup to the marker that contains the magnitude, city and country
     marker.bindPopup(`Magnitude: ${data[index][1]}<br>City: ${data[index][2]}<br>Country: ${data[index][3]}`);
 }
 
+// function that is called when the user clicks on the map
 function onMapClick(e) {
     // handling one click at a time
     if (isProcessing) {
@@ -64,6 +79,7 @@ function onMapClick(e) {
     // remove markers if already displayed
     if (markersDisplayed) {
         clearLayers();
+        // resetting the number of severe earthquakes in the HTML page
         document.getElementById("severe-count").innerHTML = "Severe earthquakes: 0";
     }
     
@@ -110,10 +126,12 @@ function onMapClick(e) {
                 severe_count++;
             }
         }
+        
         // updating the number of severe earthquakes in the HTML page
         document.getElementById("severe-count").innerHTML = `Severe earthquakes: ${severe_count}`;
         isProcessing=false;
     }).catch((error) => {
+        // logging the error to the console
         console.log(error)
         isProcessing=false;
     });
@@ -125,15 +143,20 @@ function clickMode() {
     }
     // preventing redundant event listeners
     map.off('click', onMapClick);
+
+    // Source: https://leafletjs.com/examples/quick-start/
     map.on('click', onMapClick);
 }
 
-function handleFormSubmit(event) {
+function handleSubmit(event) {
     if (markersDisplayed) {
         clearLayers();
         document.getElementById("severe-count").innerHTML = "Severe earthquakes: 0";
     }
+    // preventing the form from submitting
     event.preventDefault(); 
+
+    // getting the selected continent, month and year from the form
     selectedContinent = document.getElementById("continent").value;
     selectedMonth = document.getElementById("month").value;
     selectedYear = document.getElementById("year").value;
@@ -155,6 +178,7 @@ function handleFormSubmit(event) {
         // counting the number of severe earthquakes (magnitude >= 7)
         let severe_count = 0;
         for (let index = 0; index < data.length; index++) {            
+            // getting the latitude, longitude and tsunami value from the response
             latitude = data[index][4];
             longitude = data[index][5];
             tsunami = data[index][6];
@@ -165,6 +189,7 @@ function handleFormSubmit(event) {
                 severe_count++;
             }
         }
+        // checking if there are any markers displayed on the map
         if (data.length > 0) {
             markersDisplayed = true;
         } else {
@@ -179,29 +204,19 @@ function exploreMode() {
     if (markersDisplayed) {
         clearLayers();
     }
-    
+    // getting the form by its id
     var exploreForm = document.getElementById("explore-form");
 
     // preventing redundant event listeners
-    exploreForm.removeEventListener("submit", handleFormSubmit);
-    exploreForm.addEventListener("submit", handleFormSubmit);
+    exploreForm.removeEventListener("submit", handleSubmit);
+
+    // Source: https://developer.mozilla.org/en-US/docs/Web/API/HTMLFormElement/submit_event
+    exploreForm.addEventListener("submit", handleSubmit);
 }
-
-// click mode is the default
-clickMode();
-
-const modeSelector = document.getElementById("mode-selector");
-
-// show slider value when slider is moved source: https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/input_event
-slider.addEventListener("input", function() {
-    if (modeSelector.value === "click") {
-        output.innerHTML = "Value: " + this.value;
-    }
-});
 
 // change mode when mode selector is changed
 // source: https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/change_event
-modeSelector.addEventListener("change", function() {
+function handleModeChange() {
     const selectedMode = modeSelector.value;
 
     document.getElementById("severe-count").innerHTML = "Severe earthquakes: 0";
@@ -220,4 +235,8 @@ modeSelector.addEventListener("change", function() {
         document.getElementById("explore-mode-elements").style.display = "block";
         exploreMode();
     }
-});
+}
+
+clickMode(); // set click mode as default
+slider.addEventListener("input", handleSliderChange);
+modeSelector.addEventListener("change", handleModeChange);
