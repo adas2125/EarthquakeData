@@ -1,3 +1,17 @@
-# EarthquakeData
-The goal of this project is to design and implement a database based on earthquake data. ***More details of the project are stored in the wiki***.
-The page/section of the Wiki that details the database along with analysis questions is the Home page.
+# Earthquake App
+The Earthquake App allows users to explore earthquake data in the context of a map interface. This app is built using Flask and uses a MySQL database hosted on AWS using the Amazon Relational Database Service (RDS). This app supports both visualization of the locations of earthquakes and offers modes to interact with the data and send queries to the database. ***More details of the project are stored in the wiki***.
+
+## Key Features
+*   Interactive Map: Visualize the earthquake data points based on the locations of earthquakes. Get earthquake details by clicking on the marker.
+*   Pass Queries: Filter earthquake data based on continent, month, and year attributes.
+*   App uses database which is stored in RDS, which avoids the need to store the database locally
+
+## Setup/Installation Requirements
+1.   Clone the repository
+2.   Set up a Virtual Environment
+  - Install the virtual environment package using `pip install virtualenv`
+  - Create the virtual environment using `virtualenv env`
+3. Activate the virtual environment using `source env/bin/activate`
+4. Install the requirements using `pip install -r requirements.txt`
+5. Run the app using `python earthquake_app.py`
+6. Navigate to `http://localhost:5000/`
